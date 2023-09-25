@@ -1,0 +1,108 @@
+:root{
+    --main-color : blueviolet;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+
+.game{
+    text-align: center;
+    font-size: 20px;
+}
+
+.game__title{
+    background-color: var(--main-color);
+    padding: 30px;
+    font-size: 24px;
+    font-weight: bold;
+    color: aqua;
+}
+.start{
+    background: var(--main-color);
+    margin: 50px;
+    padding: 20px;
+    border-radius: 20px;
+    color: aqua;
+    font-size: 24px;
+    cursor: pointer;
+
+}
+.word{
+    font-size: 30px;
+    font-weight: bold;
+    color: var(--main-color);
+    user-select: none;
+    margin-bottom: 20px;
+}
+.input{
+    margin: 50px;
+    padding: 20px;
+    border-radius: 20px;
+    font-size: 24px;
+    cursor: pointer;
+    text-align: center;
+    border: 3px solid var(--main-color);
+    text-transform: capitalize;
+    caret-color: var(--main-color);
+}
+.input:focus {
+    outline: none;
+}
+.tested__word{
+    text-align: start;
+    margin: 0 100px;
+    display: flex;
+    gap: 20px;
+}
+.tested{
+    /* text-align: ; */
+    background: var(--main-color);
+    padding: 15px;
+    width: fit-content;
+    border-radius: 15px;
+    color: aqua;
+}
+.control {
+    display: flex;
+    justify-content: space-between;
+    background-color: white;
+    padding: 15px;
+    margin: 50px;
+  }
+.control span {
+    font-weight: bold;
+    color: #009688;
+}
+.typing__title {
+    background-color: white;
+    padding: 15px;
+    margin: 15px 0;
+    border-radius: 6px;
+    text-align: center;
+}
+.typing__title span {
+    font-weight: bold;
+    color: #009688;
+}
+.typing__title span::before {
+    content: "[ ";
+}
+.typing__title span::after {
+    content: " ]";
+}
+.finish {
+    font-weight: bold;
+    font-size: 40px;
+    text-align: center;
+    padding: 15px;
+}
+.finish .good {
+    color: var(--main-color);
+}
+.finish .bad {
+    color: red;
+} 
