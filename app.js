@@ -68,22 +68,7 @@ async function fetchDataFromAPI() {
     }
 }
 
-levelsBtn.forEach((btn) => {
-    btn.addEventListener("click", (e) => {
-        levelsBtn.forEach((li) => {
-            li.classList.remove("active");
-      });
-      window.localStorage.setItem("color" , e.currentTarget.dataset.color)
-      e.currentTarget.classList.add("active");
-      main.style.backgroundColor = e.currentTarget.dataset.color;
-    });
-});
 
-// add words to fetched data
-function displayRandomWords(words) {
-
-  fetchedWords.push(words[0])
-}
 // Get references to the HTML elements
 
 
